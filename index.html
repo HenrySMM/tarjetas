@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Safecard</title>
+    </head>
+    <body>
+        <link href="style.css" rel="stylesheet">
+        
+        <div id="pag1">
+        <div id="text">
+        <img src="logo1.png" id="logo">
+        <h2 id="slogan"><i>New ways to be happy</i></h2>
+        <p>Bienvenido a <i>Safecard</i>™, este es un sitio especializado en la recuperación de tarjetas
+        de crédito y/o debito,<br>en caso de alguna falla en los sistemas de extraccion de dinero de su cuenta
+        puede venir a nosotros para verificar y recuperar sus datos bancarios</p>
+        <br>
+        <h2>¿Por qué se creo Safecard™?</h2>
+        <p>Debido a las constantes caidas de servidores y problemas de seguridad, 
+        normalmente las tarjetas <br>de credito/debito tienden a ser falsificadas o borradas de la base de datos<br>
+        bancarias en muchos lugares, por lo que este sitio fue creado como una herramienta para enfrentar <br>dichas 
+        situaciones. Puede contar con nosotros para evitar <br>que situaciones como estas le afecten en sus cuentas
+        y datos bancarios.</p>
+        </div>
+        
+        <div id="white">
+        <h3>Ingrese el número de su tarjeta aquí</h3>
+
+        
+        <input type="text" id="number" maxlength="18" 
+        onKeypress="if (event.keyCode < 46 || event.keyCode > 57 || event.keyCode==47) event.returnValue = false;">
+
+
+        <button id="validar" class="boton">VERIFICAR TARJETA</button>
+
+            <div>
+                <img src="tarjetas.jpg" id="six">
+            </div>
+        </div>
+        </div>
+
+
+        <img id="imagen" class="hide">
+        <div id="mensaje" class="hide"></div>
+        <button id="fallido" class="boton , hide">volver a intentarlo</button>
+        
+
+        <script src="java.js"></script>
+    </body>
+</html>
